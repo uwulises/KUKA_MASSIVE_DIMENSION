@@ -44,7 +44,7 @@ void loop() {
   currentMillis = millis();
   //rewrite the commented code
   if(flag_retraction_delay == true && currentMillis - retractionMillis <= retraction_time) {
-    analogWrite(vel_pin, retraction_speed);
+    analogWrite(vel_pin, retraction_speed); //Uncomment for retraction
   }
   else {
     flag_retraction_delay = false;
